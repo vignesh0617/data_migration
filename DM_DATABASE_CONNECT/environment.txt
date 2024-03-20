@@ -1,0 +1,31 @@
+# base connection details
+user = root
+password = root
+host = localhost
+
+# different database names
+# loading layer name
+loading_database_name = test
+
+# extraction layer name
+extraction_database_name = extraction_layer
+
+
+# s4 access details
+user2 = TRN332272
+password2 = $athvi@dec23
+ashost = CTSAWSSD1
+sysnr = 00
+client = 100
+
+# loading options
+METADATA_TABLE  = DD03L
+METADATA_FIELDS = TABNAME,FIELDNAME,DATATYPE,LENG,DECIMALS
+no_of_rows_per_batch = 1500
+
+# delimiter can be a signle character only . use a char such that it does not comes inbetween the data, else while spliting the data, column count will not match
+current_delimiter = |
+max_records_to_load = 10000
+
+# table names
+filter_conditions_table_name = extraction_table

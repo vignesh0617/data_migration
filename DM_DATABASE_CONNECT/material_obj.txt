@@ -1,0 +1,38 @@
+# give the excel file path
+excel_file_location = C:\Users\922120\Downloads\DO010_Material_Master.xlsx
+
+# give the list of sheets to read by semicolon separated values
+sheet_names = INITIAL SCREEN;Basic Data;Additional Data
+
+# give the sheet name that contains extraction rules
+extraction_rules_sheet = Extraction Rules
+
+
+# mention rows to skip for the correspoding sheets (separated by semicolon separated values). 
+# 0th index for rows.
+# if you want to skip specif rows mention it by comma separated values . eg : 0,2,3,6
+# if you want to skip range of values mention it by ":"(colon) . eg 0:10 --> this will skip the first 11rows.( bcz it follows 0 based index)
+no_of_rows_to_skip = 0:9,11;0:9,11;0:9,11;
+
+# conditinos same as above
+rows_to_skip_for_extraction_rules = 0:7
+
+
+# mention from which columns to read data from for the correspoding sheets (separated by semicolon separated values).
+# give col headings in range
+cols_to_read = a,b;a,b;a,b
+
+#conditions same as aboe
+cols_to_read_for_extraction_rules = b,c,d,e,f,g
+
+# mention the source table column number in the sheet separated by semicolon. 1st index
+source_table_col_number = 2;2;2
+
+# mention the source field column number in the sheet separated by semicolon. 1st index
+source_field_col_number = 1;1;1
+
+# mention how many non empty fields must be present in a record for filtering
+min_no_of_non_empty_cols = 3
+
+# mention the location where the csv files should be stored
+csv_output_location = C:\\Users\\922120\\OneDrive - Cognizant\\Desktop
